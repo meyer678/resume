@@ -1,0 +1,79 @@
+{
+    "header": {
+        "name": "Adrian Meyer",
+        "title": "Software Engineer",
+        "email": "meyer678@gmail.com"
+    },
+    "about": {
+        "heading": "About Me",
+        "statement": "Full stack devloper with a passion for learning and leading by example.",
+        "linkText": "Read more"
+    },
+    "skills": {
+        "heading": "Skills",
+        "categorySkills": [
+            {
+                "title": "Programming Languages",
+                "content": "PHP, JavaScript/ES6, TypeScript, React, C#, Visual Basic .NET, SQL, Bash, LESS, SASS"
+            },
+            {
+                "title": "Frameworks",
+                "content": "React, jQuery, Concrete5, Wordpress, Lithium, Bootstrap, Foundation"
+            },
+            {
+                "title": "Software",
+                "content": "Git, Node.js, Webpack, Grunt, Gulp, Composer, Photoshop, Illustrator, Linux, Windows"
+            },
+            {
+                "title": "Processes",
+                "content": "Code Reviews, TDD, Unit Testing, SEO, Multivariate Testing, Automation Scripting, Agile Methodology"
+            }
+        ]
+    },
+    "qualities": {
+        "heading": "Qualities",
+        "list": [
+            "Natural leader and mentor",
+            "Able to clearly translate technical details and quickly adapt to business priority changes",
+            "Talented at troubleshooting complex systems and composing technical documentation",
+            "Business Professionals of America 2006 National Competition – 1st Place in VB.NET"
+        ]
+    },
+    "education": {
+        "heading": "Education",
+        "content": "Associate Degree in Computer Programmer/Analyst, May 2008, Indian Hills Community College, Ottumwa, IA, 3.8 GPA"
+    },
+    "experience": {
+        "heading": "Experience",
+        "positions": [
+            {
+                "title": "Sr. Software Engineer",
+                "company": "OpenText",
+                "location": "Broomfield, CO",
+                "date": "9/14-Current",
+                "items": [
+                    "Coming soon"
+                ]
+            },
+            {
+                "title": "Technical Director",
+                "company": "Innovation Simple Inc.",
+                "location": "Saint George, UT",
+                "date": "10/11-9/14",
+                "items": [
+                    "Developed responsive websites on Wordpress with tailored backend features. Collaborated with business owners to define technical requirements, architected solutions, integrated with ecommerce platforms and APIs, and provided estimates and technical support. Used PHP, SQL, HTML, SASS, SSH and Photoshop."
+                ]
+            },
+            {
+                "title": "IT Application Associate",
+                "company": "Principal Financial Group",
+                "location": "Des Moines, IA",
+                "date": "6/08-6/11",
+                "items": [
+                    "Developed complex applications and updates throughout the systems development life cycle including analyzing business requirements, providing estimates, planning, coding, testing, documenting, and implementing according to a planned delivery schedule.",
+                    "Considered an expert for many business critical systems. Became skilled at team development, delivery coordination, disaster recovery coordination, code repositories, server maintenance and technical support. Used VB6, SQL, and SOAP."
+                ]
+            }
+        ]
+    }
+}
