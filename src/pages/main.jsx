@@ -1,6 +1,7 @@
 import React from 'react'
 import { Jumbotron, Container, Row, Col, Image } from 'react-bootstrap';
-import headshot from '../images/headshot.png';
+import headerImg from '../images/header.jpg';
+import headshotImg from '../images/headshot.png';
 import content from '../data/content.json';
 
 class Main extends React.Component {
@@ -13,6 +14,7 @@ class Main extends React.Component {
         <Qualities />
         <Education />
         <Experience />
+        <Hobbies />
         <Footer />
       </div>
     );
@@ -22,17 +24,24 @@ class Main extends React.Component {
 class Header extends React.Component {
   render() {
     const data = content.header;
+    const jumboStyles = {
+      backgroundImage: 'url(' + headerImg + ')',
+      backgroundPosition: 'center center',
+      backgroundSize: 'cover'
+    };
     return (
       <header className="header">
-        <Jumbotron fluid className="py-4">
+        <Jumbotron fluid className="py-4" style={jumboStyles}>
           <Container>
             <Row className="justify-content-sm-center align-items-center">
-              <Col xs={5} sm={4} md={3}>
-                <Image src={headshot} roundedCircle />
+              <Col xs={5} sm={6}>
+                <Image src={headshotImg} roundedCircle />
               </Col>
-              <Col xs={7} sm={6} md={4}>
+              <Col xs={7} sm={6}>
                 <h2>{data.name}</h2>
+                <hr />
                 <h5>{data.title}</h5>
+                <h6>{data.subtitle}</h6>
                 <p>{data.email}</p>
               </Col>
             </Row>
@@ -140,16 +149,14 @@ class Experience extends React.Component {
           {data.positions.map((object) => {
             return ([
               <Row>
-                <Col xs={9}>
+                <Col xs={7} sm={8}>
                   <strong>{object.title}</strong>
-                  {object.company.length && 
-                    <span className="pr-3">, {object.company}</span>
-                  }
-                  {object.location.length &&
-                    <span>{object.location}</span>
-                  }
                 </Col>
-                <Col xs={3} className="text-right">{object.date}</Col>
+                <Col xs={5} sm={4} className="text-right">{object.date}</Col>
+              </Row>,
+              <Row>
+                <Col xs={7} sm={8}>{object.company}</Col>
+                <Col xs={5} sm={4} className="text-right">{object.location}</Col>
               </Row>,
               <Row>
                 <Col>
@@ -168,6 +175,28 @@ class Experience extends React.Component {
   }
 }
 
+class Hobbies extends React.Component {
+  render() {
+    const data = content.hobbies;
+    return (
+      <section className="hobbies my-5">
+        <Container>
+          <Row>
+            <Col>
+              <h4>{data.heading}</h4>
+              <ul className="mb-0">
+                {data.list.map((value) => {
+                  return <li>{value}</li>
+                })}
+              </ul>
+            </Col>
+          </Row>
+        </Container>
+      </section>
+    );
+  }
+}
+
 class Footer extends React.Component {
   render() {
     const data = content.footer;
@@ -176,7 +205,7 @@ class Footer extends React.Component {
         <Container>
           <Row className="justify-content-sm-center align-items-center">
             <Col>
-              <p className="text-center my-0">{data.tag} {'\u00b7'} <a href="https://github.com/meyer678/resume">View the code on GitHub</a></p>
+              <p className="text-center my-0">{data.tag} {'\u00b7'} <a href={data.linkHref}>{data.linkText}</a></p>
             </Col>
           </Row>
         </Container>

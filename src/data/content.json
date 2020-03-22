@@ -2,6 +2,7 @@
     "header": {
         "name": "Adrian Meyer",
         "title": "Software Engineer",
+        "subtitle": "Based in Boulder, Colorado",
         "email": "meyer678@gmail.com"
     },
     "about": {
@@ -49,7 +50,7 @@
                 "title": "Sr. Software Engineer",
                 "company": "OpenText",
                 "location": "Broomfield, CO",
-                "date": "9/14-Current",
+                "date": "9/2014 - Current",
                 "items": [
                     "Coming soon"
                 ]
@@ -58,7 +59,7 @@
                 "title": "Technical Director",
                 "company": "Innovation Simple Inc.",
                 "location": "Saint George, UT",
-                "date": "10/11-9/14",
+                "date": "10/2011 - 9/2014",
                 "items": [
                     "Developed responsive websites on Wordpress with tailored backend features. Collaborated with business owners to define technical requirements, architected solutions, integrated with ecommerce platforms and APIs, and provided estimates and technical support. Used PHP, SQL, HTML, SASS, SSH and Photoshop."
                 ]
@@ -67,7 +68,7 @@
                 "title": "IT Application Associate",
                 "company": "Principal Financial Group",
                 "location": "Des Moines, IA",
-                "date": "6/08-6/11",
+                "date": "6/2008 - 6/2011",
                 "items": [
                     "Developed complex applications and updates throughout the systems development life cycle including analyzing business requirements, providing estimates, planning, coding, testing, documenting, and implementing according to a planned delivery schedule.",
                     "Considered an expert for many business critical systems. Became skilled at team development, delivery coordination, disaster recovery coordination, code repositories, server maintenance and technical support. Used VB6, SQL, and SOAP."
@@ -75,7 +76,16 @@
             }
         ]
     },
+    "hobbies": {
+        "heading": "Hobbies",
+        "list": [
+            "Activities include Snowboarding, Rock Climbing, Hiking, Disc Golf, and Camping",
+            "Working on my codebase for Screeps, an MMO sandbox game for programmers"
+        ]
+    },
     "footer": {
-        "tag": "Built with React"
+        "tag": "Built with React",
+        "linkText": "View code",
+        "linkHref": "https://github.com/meyer678/resume"
     }
 }
