@@ -26,8 +26,6 @@ class Header extends React.Component {
     const data = content.header;
     const jumboStyles = {
       backgroundImage: 'url(' + headerImg + ')',
-      backgroundPosition: 'center center',
-      backgroundSize: 'cover'
     };
     return (
       <header className="header">
