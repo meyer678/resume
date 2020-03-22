@@ -2,12 +2,12 @@
     "header": {
         "name": "Adrian Meyer",
         "title": "Software Engineer",
-        "subtitle": "Based in Boulder, Colorado",
+        "subtitle": "Broomfield, Colorado",
         "email": "meyer678@gmail.com"
     },
     "about": {
         "heading": "About Me",
-        "statement": "Full stack developer with a passion for learning and leading by example"
+        "statement": "Enthusiastic software engineer with 12+ years experience specializing in web applications"
     },
     "skills": {
         "heading": "Skills",
@@ -35,43 +35,66 @@
         "list": [
             "Natural leader and mentor",
             "Able to clearly translate technical details and quickly adapt to business priority changes",
-            "Talented at troubleshooting complex systems and composing technical documentation",
-            "Business Professionals of America 2006 National Competition – 1st Place in VB.NET"
+            "Talented at troubleshooting complex systems and composing technical documentation"
         ]
     },
     "education": {
         "heading": "Education",
-        "content": "Associate Degree in Computer Programmer/Analyst, May 2008, Indian Hills Community College, Ottumwa, IA, 3.8 GPA"
+        "degree": "Associate Degree in Computer Programmer/Analyst",
+        "institution": "Indian Hills Community College",
+        "date": "May 2008",
+        "location": "Ottumwa, IA",
+        "accolades": [
+            "Participated in Rotary Club and Computer Programming Club",
+            "Business Professionals of America 2006 National Competition – 1st Place in VB.NET"
+        ]
     },
     "experience": {
         "heading": "Experience",
         "positions": [
             {
                 "title": "Sr. Software Engineer",
-                "company": "OpenText",
+                "company": "Webroot, an OpenText company",
                 "location": "Broomfield, CO",
-                "date": "9/2014 - Current",
+                "date": "Sep 2014 - Present",
                 "items": [
-                    "Coming soon"
+                    "Leading the frontend website development team",
+                    "Developing the website content management system used to promote online sales for our AntiVirus software products",
+                    "Working with marketing and sales to prioritize features in an Agile environment",
+                    "Developing a proprietary eCommerce framework with service-oriented architecture and React frontend shopping cart",
+                    "Mentoring and training other developers to keep development tasks moving forward",
+                    "Working on many high revenue generating projects such as the renew and upgrade product configurator, product recommendation tool, and cart upsell interstitials",
+                    "Implementing multivariate testing solutions and setting up variations to optimize revenue streams",
+                    "Facilitating major application upgrades and server environment upgrades",
+                    "Using PHP, SQL, JavaScript, jQuery, React, HTML, LESS, Git, SSH and Photoshop"
                 ]
             },
             {
-                "title": "Technical Director",
+                "title": "Software Engineer",
                 "company": "Innovation Simple Inc.",
                 "location": "Saint George, UT",
-                "date": "10/2011 - 9/2014",
+                "date": "Oct 2011 - Aug 2014",
                 "items": [
-                    "Developed responsive websites on Wordpress with tailored backend features. Collaborated with business owners to define technical requirements, architected solutions, integrated with ecommerce platforms and APIs, and provided estimates and technical support. Used PHP, SQL, HTML, SASS, SSH and Photoshop."
+                    "Developed responsive Wordpress themes with custom backend features tailored to each client's Business",
+                    "Integrated eCommerce platforms OpenCart and Magento into custom designed websites",
+                    "Collaborated with local business owners to define technical requirements",
+                    "Provided estimates, architected many custom solutions, and engineered reusable components to increase development efficiency",
+                    "Between development tasks, I also provided technical support to all clients and managed their payment processing",
+                    "Used PHP, SQL, JavaScript, jQuery, HTML, SASS, SSH and Photoshop"
                 ]
             },
             {
-                "title": "IT Application Associate",
+                "title": "Software Engineer",
                 "company": "Principal Financial Group",
                 "location": "Des Moines, IA",
-                "date": "6/2008 - 6/2011",
+                "date": "Jun 2008 - Jun 2011",
                 "items": [
-                    "Developed complex applications and updates throughout the systems development life cycle including analyzing business requirements, providing estimates, planning, coding, testing, documenting, and implementing according to a planned delivery schedule.",
-                    "Considered an expert for many business critical systems. Became skilled at team development, delivery coordination, disaster recovery coordination, code repositories, server maintenance and technical support. Used VB6, SQL, and SOAP."
+                    "Developed advanced document scanning software with optical character recognition",
+                    "Updated multiple systems with content management and workflow management integrations",
+                    "Managed estimates, planning, developing, testing, and documenting all software application changes while providing hands on technical support",
+                    "Coordinated multiteam code relases and prepared contingency plans",
+                    "Scripted macro instructions to streamline quality assurance testing",
+                    "Used VB6, VB.NET, SQL, JSON, XML and SOAP"
                 ]
             }
         ]
@@ -79,7 +102,7 @@
     "hobbies": {
         "heading": "Hobbies",
         "list": [
-            "Activities include Snowboarding, Rock Climbing, Hiking, Disc Golf, and Camping",
+            "Outdoor activities including Snowboarding, Rock Climbing, Hiking, Disc Golf, and Camping",
             "Working on my codebase for Screeps, an MMO sandbox game for programmers"
         ]
     },

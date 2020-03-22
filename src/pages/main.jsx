@@ -11,9 +11,9 @@ class Main extends React.Component {
         <Header />
         <About />
         <Skills />
-        <Qualities />
-        <Education />
         <Experience />
+        <Education />
+        <Qualities />
         <Hobbies />
         <Footer />
       </div>
@@ -58,8 +58,7 @@ class About extends React.Component {
         <Container>
           <Row>
             <Col>
-              <h4>{data.heading}</h4>
-              <p className="lead">{data.statement}</p>
+              <p className="lead text-center">{data.statement}</p>
             </Col>
           </Row>
         </Container>
@@ -102,7 +101,7 @@ class Qualities extends React.Component {
           <Row>
             <Col>
               <h4>{data.heading}</h4>
-              <ul className="mb-0">
+              <ul>
                 {data.list.map((value) => {
                   return <li>{value}</li>
                 })}
@@ -119,12 +118,30 @@ class Education extends React.Component {
   render() {
     const data = content.education;
     return (
-      <section className="education mt-5 mb-4">
+      <section className="education my-4">
         <Container>
           <Row>
             <Col>
               <h4>{data.heading}</h4>
-              <p>{data.content}</p>
+            </Col>
+          </Row>
+          <Row>
+            <Col xs={7} sm={8}>
+              <strong>{data.degree}</strong>
+            </Col>
+            <Col xs={5} sm={4} className="text-right">{data.date}</Col>
+          </Row>
+          <Row>
+            <Col xs={7} sm={8}>{data.institution}</Col>
+            <Col xs={5} sm={4} className="text-right">{data.location}</Col>
+          </Row>
+          <Row>
+            <Col>
+              <ul>
+                {data.accolades.map((value) => {
+                  return <li>{value}</li>
+                })}
+              </ul>
             </Col>
           </Row>
         </Container>
