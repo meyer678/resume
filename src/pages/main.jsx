@@ -34,10 +34,10 @@ class Header extends React.Component {
         <Jumbotron fluid className="py-4" style={jumboStyles}>
           <Container>
             <Row className="justify-content-sm-center align-items-center">
-              <Col xs={5} sm={6}>
-                <Image src={headshotImg} roundedCircle />
+              <Col xs={12} sm={6}>
+                <Image src={headshotImg} className="float-sm-right" roundedCircle />
               </Col>
-              <Col xs={7} sm={6}>
+              <Col xs={12} sm={6} className="intro">
                 <h2>{data.name}</h2>
                 <hr />
                 <h5>{data.title}</h5>
@@ -56,7 +56,7 @@ class About extends React.Component {
   render() {
     const data = content.about;
     return (
-      <section className="about my-5">
+      <section className="about my-4">
         <Container>
           <Row>
             <Col>
@@ -74,7 +74,7 @@ class Skills extends React.Component {
   render() {
     const data = content.skills;
     return (
-      <section className="skills my-5">
+      <section className="skills my-4">
         <Container>
           <Row>
             <Col>
@@ -99,7 +99,7 @@ class Qualities extends React.Component {
   render() {
     const data = content.qualities;
     return (
-      <section className="qualities my-5">
+      <section className="qualities my-4">
         <Container>
           <Row>
             <Col>
@@ -121,7 +121,7 @@ class Education extends React.Component {
   render() {
     const data = content.education;
     return (
-      <section className="education my-5">
+      <section className="education mt-5 mb-4">
         <Container>
           <Row>
             <Col>
@@ -139,7 +139,7 @@ class Experience extends React.Component {
   render() {
     const data = content.experience;
     return (
-      <section className="experience my-5">
+      <section className="experience my-4">
         <Container>
           <Row>
             <Col>
@@ -179,7 +179,7 @@ class Hobbies extends React.Component {
   render() {
     const data = content.hobbies;
     return (
-      <section className="hobbies my-5">
+      <section className="hobbies mt-4 mb-5">
         <Container>
           <Row>
             <Col>
