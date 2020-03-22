@@ -6,8 +6,7 @@
     },
     "about": {
         "heading": "About Me",
-        "statement": "Full stack devloper with a passion for learning and leading by example.",
-        "linkText": "Read more"
+        "statement": "Full stack devloper with a passion for learning and leading by example"
     },
     "skills": {
         "heading": "Skills",
@@ -75,5 +74,8 @@
                 ]
             }
         ]
+    },
+    "footer": {
+        "tag": "Built with React"
     }
 }

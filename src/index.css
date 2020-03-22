@@ -19,3 +19,8 @@ img {
 .header img {
   border: 1px solid #607d8b;
 }
+
+header h2,
+section h4 {
+  color: #3f51b5;
+}

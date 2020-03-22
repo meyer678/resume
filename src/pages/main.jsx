@@ -13,6 +13,7 @@ class Main extends React.Component {
         <Qualities />
         <Education />
         <Experience />
+        <Footer />
       </div>
     );
   }
@@ -22,20 +23,22 @@ class Header extends React.Component {
   render() {
     const data = content.header;
     return (
-      <Jumbotron fluid className="header">
-        <Container>
-          <Row className="justify-content-sm-center align-items-center">
-            <Col xs={5} sm={4} md={3}>
-              <Image src={headshot} roundedCircle />
-            </Col>
-            <Col xs={7} sm={6} md={4}>
-              <h2>{data.name}</h2>
-              <h5>{data.title}</h5>
-              <p>{data.email}</p>
-            </Col>
-          </Row>
-        </Container>
-      </Jumbotron>
+      <header className="header">
+        <Jumbotron fluid className="py-4">
+          <Container>
+            <Row className="justify-content-sm-center align-items-center">
+              <Col xs={5} sm={4} md={3}>
+                <Image src={headshot} roundedCircle />
+              </Col>
+              <Col xs={7} sm={6} md={4}>
+                <h2>{data.name}</h2>
+                <h5>{data.title}</h5>
+                <p>{data.email}</p>
+              </Col>
+            </Row>
+          </Container>
+        </Jumbotron>
+      </header>
     );
   }
 }
@@ -50,7 +53,6 @@ class About extends React.Component {
             <Col>
               <h4>{data.heading}</h4>
               <p className="lead">{data.statement}</p>
-              <a href="/resume/bio">{data.linkText}</a>
             </Col>
           </Row>
         </Container>
@@ -138,16 +140,16 @@ class Experience extends React.Component {
           {data.positions.map((object) => {
             return ([
               <Row>
-                <Col sm={9}>
+                <Col xs={9}>
                   <strong>{object.title}</strong>
                   {object.company.length && 
-                    <React.Fragment>, {object.company}</React.Fragment>
+                    <span className="pr-3">, {object.company}</span>
                   }
                   {object.location.length &&
-                    <span className="pl-3">{object.location}</span>
+                    <span>{object.location}</span>
                   }
                 </Col>
-                <Col sm={3} className="text-right">{object.date}</Col>
+                <Col xs={3} className="text-right">{object.date}</Col>
               </Row>,
               <Row>
                 <Col>
@@ -162,6 +164,23 @@ class Experience extends React.Component {
           })}
         </Container>
       </section>
+    );
+  }
+}
+
+class Footer extends React.Component {
+  render() {
+    const data = content.footer;
+    return (
+      <Jumbotron fluid className="footer py-3 my-0">
+        <Container>
+          <Row className="justify-content-sm-center align-items-center">
+            <Col>
+              <p className="text-center my-0">{data.tag} {'\u00b7'} <a href="https://github.com/meyer678/resume">View the code on GitHub</a></p>
+            </Col>
+          </Row>
+        </Container>
+      </Jumbotron>
     );
   }
 }
