@@ -14,6 +14,7 @@ class Main extends React.Component {
         <Experience />
         <Education />
         <Qualities />
+        <HelloWorld />
         <Hobbies />
         <Footer />
       </div>
@@ -81,8 +82,8 @@ class Skills extends React.Component {
           <dl className="row">
             {data.categorySkills.map((object) => {
               return [
-                <dt className="col-sm-3">{object.title}</dt>,
-                <dd className="col-sm-9">{object.content}</dd>
+                <dt className="col-sm-3 col-md-2">{object.title}</dt>,
+                <dd className="col-sm-9 col-md-10">{object.content}</dd>
               ]
             })}
           </dl>
@@ -164,10 +165,10 @@ class Experience extends React.Component {
           {data.positions.map((object) => {
             return ([
               <Row>
-                <Col xs={7} sm={8}>
+                <Col xs={6} sm={8}>
                   <strong>{object.title}</strong>
                 </Col>
-                <Col xs={5} sm={4} className="text-right">{object.date}</Col>
+                <Col xs={6} sm={4} className="text-right">{object.date}</Col>
               </Row>,
               <Row>
                 <Col xs={7} sm={8}>{object.company}</Col>
@@ -184,6 +185,28 @@ class Experience extends React.Component {
               </Row>
             ])
           })}
+        </Container>
+      </section>
+    );
+  }
+}
+
+class HelloWorld extends React.Component {
+  render() {
+    const data = content.helloworld;
+    return (
+      <section className="helloworld mt-4 mb-5">
+        <Container>
+          <Row>
+            <Col>
+              <h4>{data.heading}</h4>
+              <ul className="mb-0">
+                {data.list.map((value) => {
+                  return <li>{value}</li>
+                })}
+              </ul>
+            </Col>
+          </Row>
         </Container>
       </section>
     );
